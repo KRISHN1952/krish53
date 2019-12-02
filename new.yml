@@ -3,20 +3,20 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    app: myweb
-  name: myweb
+    app: new
+  name: new
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myweb
+      app: new
   template:
     metadata:
       labels:
-        app: myweb
+        app: new
     spec:
       containers:
       - image: krishna1952/new:1.0
         imagePullPolicy: Always
-        name: myweb
+        name: new
 
